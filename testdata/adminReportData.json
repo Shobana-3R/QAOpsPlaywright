@@ -1,0 +1,17 @@
+[
+    {
+        "row": 10,
+        "status": "Under Review",
+        "resolutionNotes": "Incident is currently under review."
+    },
+    {
+        "row": 11,
+        "status": "Resolved",
+        "resolutionNotes": "The issue has been investigated and resolved."
+    },
+    {
+        "row": 12,
+        "status": "Closed",
+        "resolutionNotes": "The case has been closed after completing the investigation."
+    }
+]

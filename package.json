@@ -1,0 +1,26 @@
+{
+  "name": "playwrightframework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "regression": "npx playwright test",
+    "uiTests": "npx playwright test tests/ui",
+    "apiTests": "npx playwright test tests/ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@azure/identity": "^4.13.3",
+    "@azure/playwright": "^1.1.6",
+    "@playwright/test": "^1.64.0",
+    "@types/node": "^26.6.4",
+    "allure": "^3.20.1",
+    "allure-playwright": "^3.13.0"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.3"
+  }
+}
