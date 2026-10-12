@@ -595,3 +595,33 @@
 {"level":"debug","time":"2026-10-12T13:35:19.071+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
 {"level":"debug","time":"2026-10-12T13:35:19.071+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
 {"level":"debug","time":"2026-10-12T13:35:19.071+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-10-12T13:38:32.634+0530","caller":"cmd/bin.go:138","msg":"cli os: windows, cli arch: amd64"}
+{"level":"debug","time":"2026-10-12T13:38:32.637+0530","caller":"cmd/bin.go:139","msg":"Current binary version: 0.2.359, Environment: prod"}
+{"level":"debug","time":"2026-10-12T13:38:33.434+0530","caller":"cmd/bin.go:148","msg":"Upstream version details: {Name:cli Min:0.2.265 Max:0.2.359} "}
+{"level":"info","time":"2026-10-12T13:38:33.434+0530","caller":"cmd/bin.go:196","msg":"Generating TraceID for tracking request: 01M4QJFYQ0TWG2R6NQM4KQSE2X \n"}
+{"level":"debug","time":"2026-10-12T13:38:37.719+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-10-12T13:38:37.724+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-10-12T13:38:37.724+0530","caller":"yamlconfigmanager/setup.go:746","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-10-12T13:38:37.724+0530","caller":"yamlconfigmanager/setup.go:120","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-10-12T13:38:37.732+0530","caller":"yamlconfigmanager/setup.go:2250","msg":"Autodetecting test type in files of path : C:\\PlaywrightFramework"}
+{"level":"debug","time":"2026-10-12T13:38:37.734+0530","caller":"yamlconfigmanager/setup.go:2292","msg":"File in which test type is detected - C:\\PlaywrightFramework/package.json"}
+{"level":"debug","time":"2026-10-12T13:38:37.734+0530","caller":"yamlconfigmanager/setup.go:2293","msg":"Pre command in which test type is detected - npx playwright install chromium"}
+{"level":"debug","time":"2026-10-12T13:38:37.734+0530","caller":"yamlconfigmanager/setup.go:526","msg":"Automatic test type detected - playwright"}
+{"level":"debug","time":"2026-10-12T13:38:37.734+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-10-12T13:38:37.734+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-10-12T13:38:37.734+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
+{"level":"debug","time":"2026-10-12T13:38:45.720+0530","caller":"cmd/bin.go:138","msg":"cli os: windows, cli arch: amd64"}
+{"level":"debug","time":"2026-10-12T13:38:45.722+0530","caller":"cmd/bin.go:139","msg":"Current binary version: 0.2.359, Environment: prod"}
+{"level":"debug","time":"2026-10-12T13:38:46.435+0530","caller":"cmd/bin.go:148","msg":"Upstream version details: {Name:cli Min:0.2.265 Max:0.2.359} "}
+{"level":"info","time":"2026-10-12T13:38:46.436+0530","caller":"cmd/bin.go:196","msg":"Generating TraceID for tracking request: 01M4QJGBHSCW99R83MFYG0PCEP \n"}
+{"level":"debug","time":"2026-10-12T13:38:49.261+0530","caller":"core/lifecycle.go:124","msg":"Setting environment"}
+{"level":"debug","time":"2026-10-12T13:38:49.264+0530","caller":"core/lifecycle.go:127","msg":"Parsing config"}
+{"level":"debug","time":"2026-10-12T13:38:49.264+0530","caller":"yamlconfigmanager/setup.go:746","msg":"Custom location for .hyperexecute.yaml specified. Using: hyperexecute.yaml"}
+{"level":"debug","time":"2026-10-12T13:38:49.264+0530","caller":"yamlconfigmanager/setup.go:120","msg":"using hyperexecute config from : hyperexecute.yaml"}
+{"level":"debug","time":"2026-10-12T13:38:49.268+0530","caller":"yamlconfigmanager/setup.go:2250","msg":"Autodetecting test type in files of path : C:\\PlaywrightFramework"}
+{"level":"debug","time":"2026-10-12T13:38:49.270+0530","caller":"yamlconfigmanager/setup.go:2292","msg":"File in which test type is detected - C:\\PlaywrightFramework/package.json"}
+{"level":"debug","time":"2026-10-12T13:38:49.270+0530","caller":"yamlconfigmanager/setup.go:2293","msg":"Pre command in which test type is detected - npx playwright install chromium"}
+{"level":"debug","time":"2026-10-12T13:38:49.270+0530","caller":"yamlconfigmanager/setup.go:526","msg":"Automatic test type detected - playwright"}
+{"level":"debug","time":"2026-10-12T13:38:49.270+0530","caller":"core/lifecycle.go:76","msg":"Quit requested from main goroutine...."}
+{"level":"debug","time":"2026-10-12T13:38:49.270+0530","caller":"core/lifecycle.go:77","msg":"Waiting for the goroutines to exit"}
+{"level":"debug","time":"2026-10-12T13:38:49.271+0530","caller":"core/lifecycle.go:80","msg":"All lifecycle goroutines exited"}
