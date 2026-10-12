@@ -1,0 +1,193 @@
+accessibilityJob: false
+alwaysRunPostSteps: false
+appium: null
+autosplit: true
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+captureScreenRecordingForScenarios: false
+codeDirectory: PlaywrightFramework
+collectLocalGitData: true
+combineTasksInMatrixMode: false
+concurrency: 1
+cypress: false
+differentialUpload:
+    enabled: false
+    forcedDisabled: false
+    ttlHours: null
+dynamicAllocation: false
+errorCategorizedOnFailureOnly: false
+framework:
+    additional_args: null
+    args:
+        appId: ""
+        appPath: ""
+        artifacts: false
+        autoGrantPermissions: false
+        avoidAppLaunch: false
+        customData: {}
+        darkMode: false
+        deviceSelectionStrategy: ""
+        devices: []
+        disableReleaseDevice: false
+        enableBluetooth: false
+        enableResultBundle: false
+        filters:
+            attributes: []
+        fixedIP: ""
+        isRealMobile: null
+        isVirtualDevice: false
+        language: ""
+        locale: ""
+        localhost: false
+        minorOsVersion: false
+        mitmProxy: false
+        mobileDC: null
+        networkHar: false
+        networkLogsOptions:
+            captureContent: false
+            excludeHosts: []
+            includeHosts: []
+        otherApps: []
+        platformName: ""
+        playwrightRD: false
+        preservedDevice: false
+        queueTimeout: 0
+        shards:
+            mappings: []
+        skipInstall: false
+        skipUninstallPreviousBuild: false
+        skipXMLOnRun: false
+        smartUI: null
+        testRemarks: false
+        testSuiteAppId: ""
+        testSuitePath: ""
+        uninstallPreviousBuild: false
+        xcTestPlanId: ""
+        xcTestPlanPath: ""
+    baseCommand: ""
+    defaultReports: false
+    discoveryFlags: []
+    discoveryMode: ""
+    discoveryType: ""
+    downloadURL: ""
+    flags: []
+    isTestNGXMLSuite: false
+    licenseKey: ""
+    name: ""
+    runnerFlags: []
+    toscaArgs: null
+    userdefinediscovery: false
+    version: ""
+    workingDirectory: ""
+globalPost:
+    commands: []
+    completed: false
+    disableEmail: false
+    downloadArtifacts: false
+    email:
+        linkValidity: 0
+        metaInfo: []
+        templatePath: ""
+        to: []
+    mode: ""
+    runson: ""
+    shell: ""
+    workingDirectory: ""
+globalPre:
+    commands: []
+    completed: false
+    location: ""
+    maxRetries: 0
+    mode: ""
+    runson: ""
+    shell: ""
+    type: ""
+    workingDirectory: ""
+    yamlPath: null
+globalTimeout: 90
+jobID: a565c3e7-c8d4-4877-8df4-f2673bbc52be
+key: '********'
+localHTTPProxy: ""
+ltOptions: {}
+maxRetriesPreSteps: 0
+meta: {}
+onpremEnv: ""
+platformConfig: null
+postDirectives:
+    commands: []
+    shell: ""
+    workingDirectory: ""
+pre:
+    - node --version
+    - npm --version
+    - npm ci
+    - npx playwright install chromium
+preDirectives:
+    commands:
+        - node --version
+        - npm --version
+        - npm ci
+        - npx playwright install chromium
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+project:
+    id: 01M4G0YE84T2TY0X76EFRVPG4G
+    name: LambdaTest Default Project
+    type: custom
+projectpath: ""
+regionConfig:
+    storage:
+        enabled: false
+        name: ""
+        platform: azure
+        region: ""
+    vm: []
+runson: win
+runtime:
+    language: node
+    version: "22"
+    addons: []
+    opts: {}
+slackChannel: ""
+sourcePayload:
+    verifySSL: true
+sprofilePath: ""
+storageType: ""
+testDiscovery:
+    command: node discovery.js
+    mode: static
+    type: raw
+testDiscoveryResult:
+    - tests/api/tc10-trustReport.spec.js
+    - tests/api/tc8-messageValidation.spec.js
+    - tests/api/tc9-adminExportCSV.spec.js
+    - tests/ui/tc1-3-reportSubmission.spec.js
+    - tests/ui/tc4-geoLoc.spec.js
+    - tests/ui/tc5-followUp.spec.js
+    - tests/ui/tc6-adminDashboard.spec.js
+    - tests/ui/tc7-adminStatus.spec.js
+testDiscoveryResult2D:
+    - - tests/api/tc10-trustReport.spec.js
+    - - tests/api/tc8-messageValidation.spec.js
+    - - tests/api/tc9-adminExportCSV.spec.js
+    - - tests/ui/tc1-3-reportSubmission.spec.js
+    - - tests/ui/tc4-geoLoc.spec.js
+    - - tests/ui/tc5-followUp.spec.js
+    - - tests/ui/tc6-adminDashboard.spec.js
+    - - tests/ui/tc7-adminStatus.spec.js
+testDiscoveryResultV3: []
+testRunnerCommand: npx playwright test $test --reporter=line,allure-playwright
+testSuiteStep: 30
+testSuiteTimeout: 30
+testSuites: []
+testType: playwright
+triggerMode: false
+triggerSource: CLI
+tunnelOpts:
+    testsPerTunnel: 10
+unzipPayload: false
+user: shobanarajesh
+version: "0.1"
+waitForArtefactsUpload: false
+whiteLabelProductTag: ""

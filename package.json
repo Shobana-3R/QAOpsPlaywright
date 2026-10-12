@@ -6,7 +6,7 @@
   "scripts": {
     "regression": "npx playwright test",
     "uiTests": "npx playwright test tests/ui",
-    "apiTests": "npx playwright test tests/ui"
+    "apiTests": "npx playwright test tests/api"
   },
   "keywords": [],
   "author": "",

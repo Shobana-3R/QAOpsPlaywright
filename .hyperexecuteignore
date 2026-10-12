@@ -1,0 +1,7 @@
+node_modules/
+hyperexecute.exe
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+.git/

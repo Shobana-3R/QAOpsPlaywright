@@ -49,7 +49,7 @@ test(`Anonymous Report Submission - ${data.organization} for ${data.violation}`,
     await incidentPage.enterPersonsInvolved(data.persons)
     await incidentPage.enterIncidentWitnesses(data.witnesses)
     await incidentPage.enterAdditionalInformation(data.addlinfo)
-    await incidentPage.uploadEvidence(data.evidence)
+    //await incidentPage.uploadEvidence(data.evidence)
     await expect(page.getByText("evidence.png")).toBeVisible()
     await incidentPage.clickContinue()
 

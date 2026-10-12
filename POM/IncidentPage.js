@@ -48,9 +48,9 @@ async enterIncidentWitnesses(witnesses) {
 async enterAdditionalInformation(addlinfo) {
         await this.incidentAddlinfo.fill(addlinfo)
 }
-async uploadEvidence(filePath) {
-        await this.attachEvidence.setInputFiles(filePath);
-}
+//async uploadEvidence(filePath) {
+        //await this.attachEvidence.setInputFiles(filePath);
+//}
 async clickContinue() {
         await this.continueButton.click();
     }

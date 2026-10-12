@@ -1,0 +1,23 @@
+---
+version: 0.1
+runson: win
+
+runtime:
+  language: node
+  version: "22"
+
+globalTimeout: 90
+testSuiteTimeout: 30
+testSuiteStep: 30
+
+autosplit: true
+concurrency: 1
+retryOnFailure: false
+
+pre:
+  - node --version
+  - npm --version
+  - npm ci
+  - npx playwright install chromium
+
+testRunnerCommand: npx playwright test --reporter=line,allure-playwright

@@ -1,0 +1,184 @@
+{
+    "id": "a565c3e7-c8d4-4877-8df4-f2673bbc52be",
+    "remark": "Job failed as encountered a Test level failure",
+    "created_at": "2026-10-09T10:27:32Z",
+    "update_at": "2026-10-09T10:31:12Z",
+    "global_timeout": 90,
+    "tunnel_name": "",
+    "start_time": "2026-10-09T10:27:48Z",
+    "end_time": "2026-10-09T10:31:12Z",
+    "summary": {
+        "total_time": 204000000000,
+        "execution_time": 204000000000,
+        "total_tasks": 1,
+        "build_time_consumed": 204000000000,
+        "jobTestExecutionTime": "2m49s",
+        "failed_tasks": 1,
+        "total_stage_info": {
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "scenario": {
+                "StageFailedPercent": 37.5,
+                "StagePassPercent": 62.5,
+                "TotalStage": 8
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            }
+        },
+        "status": "failed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=a565c3e7-c8d4-4877-8df4-f2673bbc52be"
+    },
+    "tasks": [
+        {
+            "id": "HYPW-3373024-1791541666787670464NQE",
+            "os": "win",
+            "status": "failed",
+            "remark": "Job failed as encountered a Test level failure",
+            "debug": false,
+            "created_at": "2026-10-09T10:27:46Z",
+            "update_at": "2026-10-09T10:31:12Z",
+            "start_time": "2026-10-09T10:27:48Z",
+            "end_time": "2026-10-09T10:31:12Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "34951ab4-d1c5-4869-871b-2a37a08f7ca2",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2026-10-09T10:27:54Z",
+                    "started_at": "2026-10-09T10:27:54Z",
+                    "updated_at": "2026-10-09T10:28:13Z",
+                    "order": 2,
+                    "task_number": 1
+                },
+                {
+                    "id": "c441eb9a-af47-4ea5-b5e2-b714f43b60e5",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:28:13Z",
+                    "updated_at": "2026-10-09T10:28:13Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "546b0f39-2484-4bcf-bf9c-3aacf8cdb6e6",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/api/tc10-trustReport.spec.js",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:28:22Z",
+                    "updated_at": "2026-10-09T10:28:30Z",
+                    "order": 4,
+                    "task_number": 1
+                },
+                {
+                    "id": "754015c2-7317-4c2a-8731-fad3c951e7f9",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "tests/api/tc8-messageValidation.spec.js",
+                    "iteration": 0,
+                    "link": "command.2.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:28:30Z",
+                    "updated_at": "2026-10-09T10:28:41Z",
+                    "order": 5,
+                    "task_number": 1
+                },
+                {
+                    "id": "afeb985a-f9dc-4ca1-8053-7b8ec594d26a",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/api/tc9-adminExportCSV.spec.js",
+                    "iteration": 0,
+                    "link": "command.3.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:28:41Z",
+                    "updated_at": "2026-10-09T10:28:49Z",
+                    "order": 6,
+                    "task_number": 1
+                },
+                {
+                    "id": "44337c06-bd7c-4e0c-9e33-d316f4d9b693",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "tests/ui/tc1-3-reportSubmission.spec.js",
+                    "iteration": 0,
+                    "link": "command.4.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:28:49Z",
+                    "updated_at": "2026-10-09T10:30:28Z",
+                    "order": 7,
+                    "task_number": 1
+                },
+                {
+                    "id": "e900d3f4-3106-4c10-b67d-4123ee0aeeb2",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/ui/tc4-geoLoc.spec.js",
+                    "iteration": 0,
+                    "link": "command.5.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:30:28Z",
+                    "updated_at": "2026-10-09T10:30:34Z",
+                    "order": 8,
+                    "task_number": 1
+                },
+                {
+                    "id": "e4e25b8e-dc20-4a69-b8c9-8d97a2f8af0a",
+                    "type": "scenario",
+                    "status": "failed",
+                    "name": "tests/ui/tc5-followUp.spec.js",
+                    "iteration": 0,
+                    "link": "command.6.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:30:34Z",
+                    "updated_at": "2026-10-09T10:30:44Z",
+                    "order": 9,
+                    "task_number": 1
+                },
+                {
+                    "id": "365c6c1e-f3ef-4ca8-9920-08ee27cce9da",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/ui/tc6-adminDashboard.spec.js",
+                    "iteration": 0,
+                    "link": "command.7.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:30:44Z",
+                    "updated_at": "2026-10-09T10:30:51Z",
+                    "order": 10,
+                    "task_number": 1
+                },
+                {
+                    "id": "dc088cfe-5ff8-4694-903b-78349be251ae",
+                    "type": "scenario",
+                    "status": "skipped",
+                    "name": "tests/ui/tc7-adminStatus.spec.js",
+                    "iteration": 0,
+                    "link": "command.8.0.log",
+                    "created_at": "2026-10-09T10:28:14Z",
+                    "started_at": "2026-10-09T10:30:51Z",
+                    "updated_at": "2026-10-09T10:31:11Z",
+                    "order": 11,
+                    "task_number": 1
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}
