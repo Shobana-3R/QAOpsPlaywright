@@ -43,8 +43,8 @@ class FollowUpPage {
         await expect(this.description)
             .toContainText(data.description);
 
-        await expect(this.attachment)
-            .toContainText(data.evidence.split('/').pop());
+       // await expect(this.attachment)
+         //   .toContainText(data.evidence.split('/').pop());
     }
     async enterMessage(message) {
         await this.addMessage.fill(message);

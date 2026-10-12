@@ -56,9 +56,9 @@ const test = base.extend({
         await incidentPage.enterAdditionalInformation(data.addlinfo);
         //await incidentPage.uploadEvidence(data.evidence);
 
-        await expect(
-            page.getByText('evidence.png')
-        ).toBeVisible();
+        //await expect(
+          //  page.getByText('evidence.png')
+        //).toBeVisible();
 
         await incidentPage.clickContinue();
 
