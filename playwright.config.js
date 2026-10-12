@@ -56,7 +56,7 @@ export default defineConfig({
             longitude: 90.9797
                 },*/
     browserName: 'chromium',
-    headless: false,
+    headless: true,
     screenshot: 'on',
     video: 'on',
     trace: 'on',
