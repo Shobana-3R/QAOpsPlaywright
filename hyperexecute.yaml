@@ -20,4 +20,10 @@ pre:
   - npm ci
   - npx playwright install chromium
 
+testDiscovery:
+  testDiscovery:
+  type: raw
+  mode: static
+  command: node discover-tests.js
+  
 testRunnerCommand: npx playwright test --reporter=line,allure-playwright

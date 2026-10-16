@@ -13,7 +13,7 @@ const { ReportApi } = require('../../utils/ReportAPI');
 
 const adminData = require('../../testdata/adminData.json');
 
-const followUpData = require('../../testdata/followUpData.json');
+const followUpData = require('../../testdata/followupData.json');
 
 test('TC08 - Admin sends message and reporter receives message', async ({ page, submittedReport }) => {
 

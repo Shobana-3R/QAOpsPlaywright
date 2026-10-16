@@ -105,7 +105,7 @@ globalPre:
     workingDirectory: ""
     yamlPath: null
 globalTimeout: 90
-jobID: a565c3e7-c8d4-4877-8df4-f2673bbc52be
+jobID: f4046dd1-2bdf-4557-aada-0c141cab191d
 key: '********'
 localHTTPProxy: ""
 ltOptions: {}
@@ -155,8 +155,9 @@ sourcePayload:
 sprofilePath: ""
 storageType: ""
 testDiscovery:
-    command: node discovery.js
+    command: node discover-tests.js
     mode: static
+    testDiscovery: null
     type: raw
 testDiscoveryResult:
     - tests/api/tc10-trustReport.spec.js
@@ -177,7 +178,7 @@ testDiscoveryResult2D:
     - - tests/ui/tc6-adminDashboard.spec.js
     - - tests/ui/tc7-adminStatus.spec.js
 testDiscoveryResultV3: []
-testRunnerCommand: npx playwright test $test --reporter=line,allure-playwright
+testRunnerCommand: npx playwright test --reporter=line,allure-playwright
 testSuiteStep: 30
 testSuiteTimeout: 30
 testSuites: []
