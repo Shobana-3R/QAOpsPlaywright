@@ -18,7 +18,7 @@ const evidencePath = path.resolve(
 for(const data of testData) {
 
 
-test.only(`Anonymous Report Submission - ${data.organization} for ${data.violation}`, async ({ page }) => {
+test(`Anonymous Report Submission - ${data.organization} for ${data.violation}`, async ({ page }) => {
 
     const homePage = new HomePage(page);
     const reportPage = new ReportPage(page);
