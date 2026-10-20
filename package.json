@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "npx playwright test",
+    "test:allure": "node scripts/run-allure.js",
     "regression": "npx playwright test",
     "uiTests": "npx playwright test tests/ui",
     "apiTests": "npx playwright test tests/api"
@@ -21,6 +23,7 @@
     "allure-playwright": "^3.13.0"
   },
   "dependencies": {
-    "csv-parse": "^7.0.3"
+    "csv-parse": "^7.0.3",
+    "dotenv": "^18.0.8"
   }
 }

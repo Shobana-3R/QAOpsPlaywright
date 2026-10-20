@@ -1,6 +1,9 @@
 // @ts-check
-import { defineConfig, devices } from '@playwright/test';
-const path = require('path');
+import 'dotenv/config';
+import { defineConfig } from '@playwright/test';
+import path from 'path';
+
+const baseURL = process.env.BASE_URL;
 const now = new Date();
 const date = now.toISOString().split('T')[0];
 const time = now.toTimeString()
@@ -35,8 +38,12 @@ export default defineConfig({
     ['html', {
       outputFolder: path.join(runFolder, 'report'),
       open: 'never'
-    }]
+    }],
+    ['allure-playwright', {
+    resultsDir: 'allure-results'
+  }]
   ],
+  globalTeardown: require.resolve('./global-teardown.js'),
   /* Run tests in files in parallel
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code.
@@ -49,7 +56,7 @@ export default defineConfig({
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'https://concern-vault.emergent.host',
+    baseURL,
     /*permissions: ['geolocation'],
     geolocation: {
             latitude: 50.0855,

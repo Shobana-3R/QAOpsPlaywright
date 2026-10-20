@@ -1,0 +1,14 @@
+Status: 200
+URL: https://concern-vault.emergent.host/api/public/stats
+Content-Type: application/json
+Response body: {"total_reports":430,"resolved":31,"under_review":35,"resolved_this_month":31,"categories_engaged":11,"categories_total":11,"resolution_rate":7.2}
+Trust Report Statistics: {
+  "total_reports": 430,
+  "resolved": 31,
+  "under_review": 35,
+  "resolved_this_month": 31,
+  "categories_engaged": 11,
+  "categories_total": 11,
+  "resolution_rate": 7.2
+}
+TC10 - Trust Report API validation passed

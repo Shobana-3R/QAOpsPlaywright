@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","14412","TC10 - Trust Report statistics match backend report data","","2026-10-15","passed","2026-10-15","","api\tc10-trustReport.spec.js","",""
 "","10555","TC09 - Validate exported CSV data against backend API report data","","2026-10-15","passed","2026-10-15","","api\tc9-adminExportCSV.spec.js","",""
 "","20384","TC08 - Admin sends message and reporter receives message","","2026-10-15","passed","2026-10-15","","api\tc8-messageValidation.spec.js","",""
+"","14412","TC10 - Trust Report statistics match backend report data","","2026-10-15","passed","2026-10-15","","api\tc10-trustReport.spec.js","",""

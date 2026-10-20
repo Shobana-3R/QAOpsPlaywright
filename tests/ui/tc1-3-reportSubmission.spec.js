@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+const path = require('path');
 const { HomePage } = require('../../POM/HomePage');
 const { ReportPage } = require('../../POM/ReportPage');
 const { ViolationPage } = require('../../POM/ViolationPage');
@@ -8,11 +9,16 @@ const { CreatePasswordPage } = require('../../POM/CreatePasswordPage')
 const { ConfirmationPage } = require('../../POM/ConfirmationPage')
 
 const testData = require('../../testdata/reportData.json')
+const evidencePath = path.resolve(
+  process.cwd(),
+  'testdata',
+  'evidence.png'
+)
 
 for(const data of testData) {
 
 
-test(`Anonymous Report Submission - ${data.organization} for ${data.violation}`, async ({ page }) => {
+test.only(`Anonymous Report Submission - ${data.organization} for ${data.violation}`, async ({ page }) => {
 
     const homePage = new HomePage(page);
     const reportPage = new ReportPage(page);
@@ -49,8 +55,8 @@ test(`Anonymous Report Submission - ${data.organization} for ${data.violation}`,
     await incidentPage.enterPersonsInvolved(data.persons)
     await incidentPage.enterIncidentWitnesses(data.witnesses)
     await incidentPage.enterAdditionalInformation(data.addlinfo)
-    //await incidentPage.uploadEvidence(data.evidence)
-    //await expect(page.getByText("evidence.png")).toBeVisible()
+    await incidentPage.uploadEvidence(evidencePath)
+    await expect(page.getByText("evidence.png")).toBeVisible()
     await incidentPage.clickContinue()
 
     await createpasswordPage.enterFollowupPw(data.password)

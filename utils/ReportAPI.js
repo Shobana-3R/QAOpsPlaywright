@@ -2,13 +2,15 @@ class ReportApi {
 
     constructor(request) {
         this.request = request;
+        this.baseURL = process.env.BASE_URL;
     }
 
+    
 
     async getReport(reportId) {
 
         return await this.request.get(
-            `https://concern-vault.emergent.host/api/admin/reports/${reportId}`
+             `${this.baseURL}/api/admin/reports/${reportId}`
         );
 
     }
@@ -17,7 +19,7 @@ class ReportApi {
     async sendAdminMessage(reportId, message) {
 
         return await this.request.post(
-            `https://concern-vault.emergent.host/api/admin/reports/${reportId}/message`,
+             `${this.baseURL}/api/admin/reports/${reportId}/message`,
             {
                 data: {
                     message: message
@@ -31,7 +33,7 @@ class ReportApi {
     async getReports() {
 
         return await this.request.get(
-            'https://concern-vault.emergent.host/api/admin/reports'
+             `${this.baseURL}/api/admin/reports`
         );
 
     }
@@ -40,7 +42,12 @@ class ReportApi {
     async getTrustReportStats() {
 
         return await this.request.get(
-            'https://concern-vault.emergent.host/api/public/stats'
+             `${this.baseURL}/api/public/stats`,
+              {
+            headers: {
+                Accept: 'application/json'
+            }
+        }
         );
 
     }
